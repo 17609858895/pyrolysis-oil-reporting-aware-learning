@@ -1,9 +1,9 @@
 """Step 1 - clean the literature-derived compound table and build experiment-level units.
 
-Outputs (ml_study/tables):
+Outputs (tables/):
   records_clean.csv      one row per reported compound record with harmonised descriptors
   experiments.csv        one row per experiment (study x feedstock x catalyst x technology x T x note)
-Design decisions are recorded in ml_study/evidence/data_decisions.md.
+Cleaning rules and exclusions are defined below.
 """
 import os, re
 import numpy as np
